@@ -42,7 +42,7 @@
     margin-bottom: 15px;
 }
 
-.post:nth-child(odd) .post-type {
+.post-card:nth-child(odd) .post-type {
     color: var(--primary--color);
 }
 
