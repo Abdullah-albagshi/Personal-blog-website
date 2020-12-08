@@ -38,7 +38,7 @@ hr {
     color: var(--dark-grey);
 }
 
-h1 {
+h1:not(:first-child) {
     font-size: 3rem;
     margin: 10px 0;
 }
