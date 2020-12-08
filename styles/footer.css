@@ -1,5 +1,13 @@
+:root {
+    --primary--color: #007BFF;
+}
+
 .footer {
     grid-area: ft;
     text-align: center;
     margin: 50px 0;
+}
+
+a {
+    color: var(--primary--color);
 }
