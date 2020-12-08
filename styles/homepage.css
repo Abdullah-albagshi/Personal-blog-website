@@ -5,6 +5,10 @@
 
 /* Global styles Start*/
 
+:root {
+    --light--black: #2e2e2ee1;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,6 +21,16 @@ body {
     background: #f4f4f2;
 }
 
+p {
+    color: var(--light--black);
+}
+
+
+/* Global styles End*/
+
+
+/* grid container Start*/
+
 .container {
     display: grid;
     grid-template-areas: 'hd ' 'main ' 'ft ';
@@ -25,7 +39,7 @@ body {
 }
 
 
-/* Global styles End*/
+/* grid container End*/
 
 
 /* media quires Start*/
