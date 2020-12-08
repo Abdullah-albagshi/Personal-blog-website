@@ -1,0 +1,43 @@
+.cards {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    border: 5px solid #bbbfca;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #495464;
+    background: #f0f0f01a;
+}
+
+.post-type {
+    color: #26A745;
+    margin-bottom: 15px;
+}
+
+.card:nth-child(odd) .post-type {
+    color: #007BFF;
+}
+
+.post-date {
+    color: #495464;
+    margin: 5px 0;
+}
+
+.card a {
+    margin-top: 50px;
+    color: #007BFF;
+}
+
+@media screen and (max-width:1150px) and (min-height:760px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
