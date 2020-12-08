@@ -71,8 +71,14 @@
 
 /* Post Card End */
 
+
+/* media quires Start*/
+
 @media screen and (max-width:1150px) and (min-height:760px) {
     .posts {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* media quires End*/

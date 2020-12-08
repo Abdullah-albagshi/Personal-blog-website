@@ -1,3 +1,15 @@
+/* Global styles End*/
+
+h1 {
+    color: #3b3b3b;
+}
+
+
+/* Global styles End*/
+
+
+/* Header Section Start */
+
 .header {
     grid-area: hd;
     display: flex;
@@ -11,15 +23,17 @@
     color: #495464;
 }
 
-h1 {
-    color: #3b3b3b;
-}
-
 #input-search {
     height: 30px;
     width: 150px;
     padding: 15px;
 }
+
+
+/* Header Section End */
+
+
+/* media quires Start*/
 
 @media screen and (max-width:600px) {
     .header {
@@ -32,3 +46,6 @@ h1 {
         width: 250px;
     }
 }
+
+
+/* media quires End*/

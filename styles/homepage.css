@@ -2,6 +2,9 @@
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./main.css');
+
+/* Global styles Start*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +24,12 @@ body {
     margin: 0 150px;
 }
 
+
+/* Global styles End*/
+
+
+/* media quires Start*/
+
 @media all and (max-width:1150px) and (min-height:760px) {
     .container {
         margin: 0 80px;
@@ -32,3 +41,6 @@ body {
         margin: 0 30px;
     }
 }
+
+
+/* media quires End*/
