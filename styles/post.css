@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('./header.css');
 @import url('./footer.css');
 
-/* Global styles */
+/* Global styles Start*/
+
+:root {
+    --primary--color: #007BFF;
+    --dark-grey: #535c69;
+    --light--grey: #8f8f8f;
+}
 
 * {
     box-sizing: border-box;
@@ -10,7 +17,7 @@
 }
 
 a {
-    color: #007BFF;
+    color: var(--primary--color);
 }
 
 body {
@@ -27,8 +34,20 @@ li {
     margin: 7px 0;
 }
 
+hr {
+    color: var(--dark-grey);
+}
 
-/* grid container */
+h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+
+/* Global styles End*/
+
+
+/* grid container Start*/
 
 .container {
     display: grid;
@@ -38,6 +57,9 @@ li {
 }
 
 
+/* grid container End*/
+
+
 /* article section */
 
 .post {
@@ -45,13 +67,53 @@ li {
 }
 
 
-/* about section  */
+/* Author section Start*/
+
+.author {
+    height: 50px;
+}
+
+img {
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.author-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* Author section End*/
+
+.post-release {
+    color: var(--dark-grey);
+    margin-bottom: 20px;
+}
+
+.post-intro {
+    margin-bottom: 25px;
+}
+
+
+/* article section End */
+
+
+/* about section Start  */
 
 .about {
     grid-area: about;
     max-width: 250px;
     background: #e6e6e6;
     padding: 20px;
+    max-height: 360px;
+}
+
+.about h3 {
+    font-size: 1.5rem;
 }
 
 .about p {
@@ -60,21 +122,38 @@ li {
 }
 
 
-/* archives section */
+/* about section End  */
+
+
+/* archives section Start*/
 
 .archives {
     grid-area: archives;
 }
 
+.archives h3 {
+    font-size: 1.5rem;
+}
 
-/* social section */
+
+/* archives section End*/
+
+
+/* social section Start*/
 
 .social {
     grid-area: social;
 }
 
+.social h3 {
+    font-size: 1.5rem;
+}
 
-/* media quires */
+
+/* social section End*/
+
+
+/* media quires Start*/
 
 @media all and (max-width:1150px) and (min-height:760px) {
     .container {
@@ -82,8 +161,23 @@ li {
     }
 }
 
+@media all and (max-width:970px) {
+    .container {
+        grid-template-areas: 'hd hd hd' 'post post post' 'about about about ' 'archives social social' 'ft ft ft';
+    }
+    .about {
+        max-width: unset;
+    }
+}
+
 @media all and (max-width:600px) {
     .container {
         margin: 0 30px;
     }
+    h1 {
+        font-size: 2rem;
+    }
 }
+
+
+/* media quires End*/
