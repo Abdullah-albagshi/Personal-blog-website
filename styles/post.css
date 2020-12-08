@@ -1,0 +1,89 @@
+@import url('./header.css');
+@import url('./footer.css');
+
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007BFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background: #f4f4f2;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 7px 0;
+}
+
+
+/* grid container */
+
+.container {
+    display: grid;
+    grid-template-areas: 'hd hd hd hd' 'post post post about' 'post post post archives' 'post post post social' 'ft ft ft ft';
+    gap: 30px;
+    margin: 0 150px;
+}
+
+
+/* article section */
+
+.post {
+    grid-area: post;
+}
+
+
+/* about section  */
+
+.about {
+    grid-area: about;
+    max-width: 250px;
+    background: #e6e6e6;
+    padding: 20px;
+}
+
+.about p {
+    line-height: 1.3;
+    word-spacing: 1.5 px;
+}
+
+
+/* archives section */
+
+.archives {
+    grid-area: archives;
+}
+
+
+/* social section */
+
+.social {
+    grid-area: social;
+}
+
+
+/* media quires */
+
+@media all and (max-width:1150px) and (min-height:760px) {
+    .container {
+        margin: 0 80px;
+    }
+}
+
+@media all and (max-width:600px) {
+    .container {
+        margin: 0 30px;
+    }
+}
