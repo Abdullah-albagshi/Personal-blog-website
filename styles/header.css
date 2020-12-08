@@ -11,6 +11,10 @@
     color: #495464;
 }
 
+h1 {
+    color: #3b3b3b;
+}
+
 #input-search {
     height: 30px;
     width: 150px;
